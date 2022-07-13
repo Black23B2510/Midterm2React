@@ -80,9 +80,7 @@ const FoodSearch = () => {
                 </button>
                 <td>
                   <Link to={"/quantity"}>
-                    
                       View quantity
-                   
                   </Link>
                 </td>
               </div>
