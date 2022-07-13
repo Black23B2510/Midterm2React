@@ -28,6 +28,11 @@ const FoodSearch = () => {
   }, []);
   return (
     <div>
+      <Link to={"/quantity"}>
+        <button type="button" className="btn btn-success">
+          View Quantity
+        </button>
+      </Link>
       <div>
         <label htmlFor="search">Name</label>
         <br />
@@ -78,11 +83,6 @@ const FoodSearch = () => {
                 <button type="button" className="btn btn-success">
                   View more
                 </button>
-                <td>
-                  <Link to={"/quantity"}>
-                      View quantity
-                  </Link>
-                </td>
               </div>
             </div>
             <div>----------------------------------------------------</div>
