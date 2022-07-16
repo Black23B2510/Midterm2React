@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const FoodSearch = () => {
   const [food, setFood] = useState([]);
@@ -80,9 +80,14 @@ const FoodSearch = () => {
               <div>{food.description}</div>
               <div>
                 {" "}
-                <button type="button" className="btn btn-success">
+                <Link to={food.id}>
+                  <button type="button" className="btn btn-success">
+                    View detail
+                  </button>
+                </Link>
+                {/* <button type="button" className="btn btn-success">
                   View more
-                </button>
+                </button> */}
               </div>
             </div>
             <div>----------------------------------------------------</div>
